@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div>
       <h1 className={headerStyles.title}>
-        <span>NextShop</span> book
+        <span>Next</span>Shop
       </h1>
       <p className={headerStyles.description}>
         Keep up to date with books

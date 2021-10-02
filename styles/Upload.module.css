@@ -1,0 +1,16 @@
+.uploader {
+  width: 128px;
+  height: 128px;
+  border: 1px dashed #999999;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 6rem;
+}
+
+.uploader:hover {
+  cursor: pointer;
+  background-color: #e4e4e4;
+  border: 1px dashed #0070f3;
+}

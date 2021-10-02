@@ -1,3 +1,57 @@
+import Link from 'next/link'
+import navStyles from '../styles/Nav.module.css'
+import { ShoppingOutlined } from '@ant-design/icons'
+
+const Nav = () => {
+  return (
+    <nav className={navStyles.nav}>
+      <ul>
+        <li>
+          <Link href='/'>Home</Link>
+        </li>
+        <li>
+          <Link href='/about'>About</Link>
+        </li>
+        <li>
+          <Link href='/'>Categories</Link>
+        </li>
+        <li>
+          <Link href='/latestproducts'>Latest products</Link>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <Link href='/cart'><a><ShoppingOutlined /> Shopping</a></Link>
+        </li>
+        <li>
+          <Link href='/Auth/login'>Join Us</Link>
+        </li>
+      </ul>
+    </nav>
+  )
+}
+
+export default Nav
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import { Menu } from 'antd';
 // import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 // import { useState } from 'react'
@@ -46,38 +100,3 @@
 
 // export default Nav
 
-
-
-
-
-
-
-
-import Link from 'next/link'
-import navStyles from '../styles/Nav.module.css'
-
-const Nav = () => {
-  return (
-    <nav className={navStyles.nav}>
-      <ul>
-        <li>
-          <Link href='/'>Home</Link>
-        </li>
-        <li>
-          <Link href='/about'>About</Link>
-        </li>
-        <li>
-          <Link href='/'>Categories</Link>
-        </li>
-        <li>
-          <Link href='/latestproducts'>Latest products</Link>
-        </li>
-        <li>
-          <Link href='/Auth/login'>Join Us</Link>
-        </li>
-      </ul>
-    </nav>
-  )
-}
-
-export default Nav

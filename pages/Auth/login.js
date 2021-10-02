@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import http from "../../utils/http";
 import { Form, Input, Button, Checkbox, Alert } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
+import Avatar from '../../components/upload'
+
 
 export default function Login() {
   const api = http();
@@ -46,7 +48,9 @@ export default function Login() {
         initialValues={{
           remember: true,
         }}
-      >
+      ><Form.Item>
+        <Avatar />
+      </Form.Item>
         <Form.Item
           name="username"
           rules={[

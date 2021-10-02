@@ -10,7 +10,7 @@ export default function Home({ articles }) {
 }
 
 export const getServerSideProps = async () => {
-  const res = await fetch(`${server}/Products/GetAll`)
+  const res = await fetch(`${server}/Products/GetAll/?categoryId=14`)
   const articles = await res.json()
 
   return {
@@ -19,14 +19,3 @@ export const getServerSideProps = async () => {
     },
   }
 }
-
-// export const getStaticProps = async () => {
-//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
-//   const articles = await res.json()
-
-//   return {
-//     props: {
-//       articles,
-//     },
-//   }
-// }
