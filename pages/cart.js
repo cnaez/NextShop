@@ -1,5 +1,5 @@
-import { useCart } from 'react-use-cart'
-import { Button } from 'antd';
+import { useCart } from "react-use-cart";
+import { Button } from "antd";
 
 export default function Cart() {
   const {
@@ -11,15 +11,13 @@ export default function Cart() {
     removeItem,
   } = useCart();
 
-  if (isEmpty) return <p>Your cart is empty</p>;
-
   return (
     <>
       <Button onClick={emptyCart()}>Clean up</Button>
       <h1>Cart ({totalUniqueItems})</h1>
 
       <ul>
-        {items.map((item) => (
+        {result.map((item) => (
           <li key={item.id}>
             {item.quantity} x {item.name} &mdash;
             <button
